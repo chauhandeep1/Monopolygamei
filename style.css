@@ -1,0 +1,408 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 98vh 1fr;
+  grid-template-rows: 98vh;
+  background-color: black;
+}
+
+.sides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play1disp,
+#play2disp {
+  background-color: rgb(64, 103, 230);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(168, 240, 223),
+    rgb(0, 21, 89)
+  );
+  padding: 3vmin;
+  border-radius: 3vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  max-height: 90vmin;
+  margin: 5vmin;
+}
+
+#play2disp {
+  background-color: rgba(51, 255, 0, 0.571);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(179, 249, 200),
+    rgb(0, 255, 0)
+  );
+}
+
+.btns {
+  height: 4vmin;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vmin;
+}
+
+.btns,
+#ply1SubName,
+#ply2SubName {
+  color: black;
+  border-radius: 0.6vmin;
+}
+
+#ply1Input,
+#ply1SubName,
+#ply2Input,
+#ply2SubName {
+  border-radius: 0.6vmin;
+}
+
+.plyTitle {
+  font-size: 5.5vmin;
+}
+
+.bankDisp,
+.handTitle,
+.totValDisp {
+  font-size: 3vmin;
+}
+
+.handDisp {
+  font-size: 2vmin;
+}
+
+.handDisp {
+  margin-top: 0;
+}
+
+.handTitle {
+  margin-bottom: 0;
+}
+
+.rollBtns {
+  margin-top: 2vmin;
+  font-size: 2vmin;
+}
+
+.nameInput {
+  margin-top: 0;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: 1fr 69vh 1fr;
+  grid-template-rows: 1fr 69vh 1fr;
+  border: 0.15vh solid rgb(169, 47, 47);
+}
+
+#boardCenter {
+  border: 0.15vh solid rgb(73, 23, 210);
+  background-image: url('https://image.api.playstation.com/cdn/UP0001/CUSA01061_00/AUI2zDiAMJw9elFaJCUxhuRUy7U72ZiS.png');
+  background-size: cover;
+}
+
+.tbSides {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.lrSides {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.spaces {
+  border: 0.15vh solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#boardCenter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6vh 6vh 1fr 30vh 1fr 6vh 6vh;
+}
+
+.token {
+  background-color: rgb(143, 136, 60);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(217, 214, 123),
+    rgb(216, 232, 38)
+  );
+  padding: 0.3vh;
+  font-size: 2.5vh;
+  border: 0.15vh solid black;
+  border-radius: 0.5vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#diceCont {
+  display: flex;
+  justify-content: center;
+}
+
+#firstDice {
+  width: 6vh;
+  background-image: url('dice1.png');
+  background-size: cover;
+  margin: 0 1vmin;
+  opacity: 0;
+}
+#secDice {
+  width: 6vh;
+  background-image: url('dice1.png');
+  background-size: cover;
+  margin: 0 1vmin;
+  opacity: 0;
+}
+
+#noticeCont {
+  display: flex;
+  justify-content: center;
+}
+
+#noticeBox {
+  background-color: rgb(223, 88, 64);
+  border: 0.4vh solid black;
+  border-radius: 0.5vh;
+  height: 30vh;
+  width: 45vh;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3vh;
+  opacity: 0;
+}
+
+#aCont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  color: black;
+  background-color: white;
+  font-size: 1.4vmin;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2vmin;
+  max-width: 20vmin;
+  padding: 0 1vmin;
+}
+a:hover {
+  color: red;
+}
+
+#go {
+  background-image: url('0.png.jpeg');
+  background-size: cover;
+}
+
+#s1 {
+  background-image: url('1.png.jpeg');
+  background-size: cover;
+}
+
+#s2 {
+  background-image: url('cc.jpg');
+  background-size: cover;
+}
+
+#s3 {
+  background-image: url('3.png.jpeg');
+  background-size: cover;
+}
+
+#s4 {
+  background-image: url('4.png.jpeg');
+  background-size: cover;
+}
+
+#s5 {
+  background-image: url('5.png.jpeg');
+  background-size: cover;
+}
+
+#s6 {
+  background-image: url('6.png.jpeg');
+  background-size: cover;
+}
+
+#s7 {
+  background-image: url('7.png.jpeg');
+  background-size: cover;
+}
+
+#s8 {
+  background-image: url('8.png.jpeg');
+  background-size: cover;
+}
+
+#s9 {
+  background-image: url('9.png.jpeg');
+  background-size: cover;
+}
+
+#jail {
+  background-image: url('10.png.jpeg');
+  background-size: cover;
+}
+
+#s11 {
+  background-image: url('11.png.jpeg');
+  background-size: cover;
+}
+
+#s12 {
+  background-image: url('12.png.jpeg');
+  background-size: cover;
+}
+
+#s13 {
+  background-image: url('13.png.jpeg');
+  background-size: cover;
+}
+
+#s14 {
+  background-image: url('14.png.jpeg');
+  background-size: cover;
+}
+
+#s15 {
+  background-image: url('15.png.jpeg');
+  background-size: cover;
+}
+
+#s16 {
+  background-image: url('16.png.jpeg');
+  background-size: cover;
+}
+
+#s17 {
+  background-image: url('17.png.jpeg');
+  background-size: cover;
+}
+
+#s18 {
+  background-image: url('18.png.jpeg');
+  background-size: cover;
+}
+
+#s19 {
+  background-image: url('19.png.jpeg');
+  background-size: cover;
+}
+
+#freePark {
+  background-image: url('freePark.jpg');
+  background-size: cover;
+}
+
+#s21 {
+  background-image: url('21.png.jpeg');
+  background-size: cover;
+}
+
+#s22 {
+  background-image: url('22.png.jpeg');
+  background-size: cover;
+}
+
+#s23 {
+  background-image: url('23.png.jpeg');
+  background-size: cover;
+}
+
+#s24 {
+  background-image: url('24.png.jpeg');
+  background-size: cover;
+}
+
+#s25 {
+  background-image: url('25.png.jpeg');
+  background-size: cover;
+}
+
+#s26 {
+  background-image: url('26.png.jpeg');
+  background-size: cover;
+}
+
+#s27 {
+  background-image: url('27.png.jpeg');
+  background-size: cover;
+}
+
+#s28 {
+  background-image: url('28.png.jpeg');
+  background-size: cover;
+}
+
+#s29 {
+  background-image: url('29.png.jpeg');
+  background-size: cover;
+}
+
+#goJail {
+  background-image: url('gotojail.png.jpeg');
+  background-size: cover;
+}
+
+#s31 {
+  background-image: url('31.png.jpeg');
+  background-size: cover;
+}
+
+#s32 {
+  background-image: url('32.png.jpeg');
+  background-size: cover;
+}
+
+#s33 {
+  background-image: url('33.png.jpeg');
+  background-size: cover;
+}
+
+#s34 {
+  background-image: url('34.png.jpeg');
+  background-size: cover;
+}
+
+#s35 {
+  background-image: url('35.png.jpeg');
+  background-size: cover;
+}
+
+#s36 {
+  background-image: url('36.png.jpeg');
+  background-size: cover;
+}
+
+#s37 {
+  background-image: url('37.png.jpeg');
+  background-size: cover;
+}
+
+#s38 {
+  background-image: url('38.png.jpeg');
+  background-size: cover;
+}
+
+#s39 {
+  background-image: url('39.png.jpeg');
+  background-size: cover;
+}
